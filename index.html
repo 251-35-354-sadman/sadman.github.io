@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sadman Habij Saim — Portfolio</title>
+
+  <!-- ✅ Paste starts here -->
+  <meta name="description" content="Sadman Habij Saim is a web developer and UI/UX enthusiast with experience in responsive design, graphic editing, and academic excellence. Currently studying at Daffodil International University and pursuing Fazil studies.">
+
+  <meta property="og:title" content="Sadman Habij Saim — Portfolio">
+  <meta property="og:description" content="Explore Sadman's web development journey, UI/UX skills, and academic background.">
+  <meta property="og:image" content="https://sadman.github.io/assets/20250119_152225.jpg">
+  <meta property="og:url" content="https://sadman.github.io">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sadman Habij Saim — Portfolio">
+  <meta name="twitter:description" content="Web developer, UI/UX enthusiast, and student at DIU.">
+  <meta name="twitter:image" content="https://sadman.github.io/assets/20250119_152225.jpg">
+  <!-- ✅ Paste ends here -->
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-blobs" aria-hidden="true"></div>
+
+  <!-- floating follower (keu click korte parbe na) -->
+  <div id="navFollower" class="nav-follower" aria-hidden="true"></div>
+
+  <div class="layout">
+    <aside class="left-col">
+      <div class="brand">
+        <div class="avatar-wrap" aria-hidden="false">
+          <img src="assets/20250119_152225.jpg" alt="Sadman Habij Saim — avatar" class="avatar-img" />
+          <div class="avatar-fallback" aria-hidden="true">TN</div>
+        </div>
+        <h1 class="name">SADMAN HABIJ SAIM</h1>
+        <p class="role">Web Developer • UI/UX</p>
+      </div>
+
+      <div class="contact-block">
+        <a href="mailto:sadmansiam260@gmail.com" class="contact-line">📧 sadmansiam260@gmail.com</a>
+        <div class="separator" aria-hidden="true"></div>
+
+        <a id="resumeBtn" class="download-btn" href="assets/resume.pdf" download aria-label="Download resume" aria-describedby="resumeStatus">
+          <span class="icon">📄</span><span class="text">Resume</span>
+        </a>
+
+        <button class="cta-unique" type="button">🤝 Hire / Collaborate</button>
+
+        <!-- new toggle button for follower preview -->
+        <button id="navFollowerBtn" class="nav-toggle" type="button" aria-pressed="true" title="Toggle section preview">
+          � Preview on hover
+        </button>
+
+        <div id="resumeStatus" class="muted" aria-live="polite" style="display:none;margin-top:8px;font-size:0.9rem"></div>
+      </div>
+
+      <nav class="left-nav" aria-label="Site">
+        <a href="#summary">Summary</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </aside>
+
+    <main class="main-col">
+      <section id="summary" class="panel" data-animate>
+        <h2 class="panel-title">Summary</h2>
+        <p class="lead">I am currently studying at Daffodil International University. I completed Dakhil in 2022 and Alim in 2024, and I am also pursuing Fazil studies alongside my university education.</p>
+      </section>
+
+      <!-- replace Experience section -->
+      <section id="experience" class="panel striped" data-animate>
+        <h2 class="panel-title">Experience</h2>
+        <article class="item">
+          <h3>Daffodil International University — Undergraduate Student</h3>
+          <p class="muted">Currently enrolled — balancing academic coursework with practical projects and campus activities.</p>
+          <ul>
+            <li>Developed responsive web pages and small web apps as part of coursework.</li>
+            <li>Collaborated on team projects; managed tasks and version control.</li>
+          </ul>
+        </article>
+
+        <article class="item" style="margin-top:10px">
+          <h3>Freelance Graphic Design</h3>
+          <p class="muted">Adobe Photoshop & Illustrator</p>
+          <ul>
+            <li>Image retouching, basic branding assets and vector illustrations.</li>
+            <li>Delivered print-ready and web-optimized files for small clients.</li>
+          </ul>
+        </article>
+
+        <article class="item" style="margin-top:10px">
+          <h3>Part-time Handicraft / Tailoring Work</h3>
+          <p class="muted">Occasional stitching and small tailoring assignments</p>
+          <ul>
+            <li>Practical craft work that improves attention to detail and time management.</li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- replace Skills section -->
+      <section id="skills" class="panel" data-animate>
+        <h2 class="panel-title">Skills</h2>
+        <div class="skills">
+          <div class="skill" data-level="92">
+            <div class="label">MS Office <span>95%</span></div>
+            <div class="bar"><div class="fill"></div></div>
+          </div>
+          <div class="skill" data-level="88">
+            <div class="label">HTML & CSS <span>88%</span></div>
+            <div class="bar"><div class="fill"></div></div>
+          </div>
+          <div class="skill" data-level="82">
+            <div class="label">JavaScript <span>82%</span></div>
+            <div class="bar"><div class="fill"></div></div>
+          </div>
+          <div class="skill" data-level="85">
+            <div class="label">Adobe Photoshop <span>85%</span></div>
+            <div class="bar"><div class="fill"></div></div>
+          </div>
+          <div class="skill" data-level="80">
+            <div class="label">Adobe Illustrator <span>80%</span></div>
+            <div class="bar"><div class="fill"></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="panel tilted" data-animate>
+        <h2 class="panel-title">Projects</h2>
+        <div class="projects-grid">
+          <article class="project" data-animate>
+            <h4 class="proj-title">Project One</h4>
+            <p class="proj-desc">One-line summary — tech & outcome.</p>
+          </article>
+          <article class="project" data-animate>
+            <h4 class="proj-title">Project Two</h4>
+            <p class="proj-desc">One-line summary — tech & outcome.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="panel" data-animate>
+        <h2 class="panel-title">Contact</h2>
+        <a href="mailto:sadmansiam260@gmail.com" class="contact-email" aria-label="Email Sadman">📧 Email</a>
+        <form id="contactForm" class="contact-form">
+          <input name="name" placeholder="Name" required />
+          <input name="email" type="email" placeholder="Email" required />
+          <textarea name="message" rows="4" placeholder="Message" required></textarea>
+          <button type="submit">Send</button>
+          <p id="formStatus" class="muted" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <footer class="foot muted">© <span id="year"></span> Tomar Naam</footer>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
